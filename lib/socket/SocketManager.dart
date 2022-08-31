@@ -1,8 +1,10 @@
+
 import 'package:socket_io_client/socket_io_client.dart' as IO;
 
 const _TAG = "SocketManager";
 
 class SocketManager {
+
   // Singleton Class Object
   static final SocketManager _singleton = SocketManager._internal();
 
@@ -43,3 +45,4 @@ class SocketManager {
   }
 
 }
+
