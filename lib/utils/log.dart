@@ -6,7 +6,7 @@ class Log {
 
   var _kDebugMode = false;
 
-  Log(kDebugMode){
+  Log(bool kDebugMode){
     _kDebugMode = kDebugMode;
   }
 
