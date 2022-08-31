@@ -1,10 +1,9 @@
 
-import 'package:flutter/foundation.dart';
 import 'dart:developer' as logger;
 
 class Log {
 
-  var _kDebugMode = true;
+  static var _kDebugMode = true;
 
   set kDebugMode(value) {
     _kDebugMode = value;
@@ -19,12 +18,17 @@ class Log {
 
   Log._internal();
 
-  void e(String tag, Object? message) {
+  static void e(String tag, Object? message) {
     if (_kDebugMode) {
       logger.log(tag, error: message);
     }
   }
 
+  static void d(String tag, Object? message) {
+    if (_kDebugMode) {
+      logger.log(tag, error: message);
+    }
+  }
 }
 
 
