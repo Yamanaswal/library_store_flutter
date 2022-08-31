@@ -4,11 +4,20 @@ import 'dart:developer' as logger;
 
 class Log {
 
-  var _kDebugMode = false;
+  var _kDebugMode = true;
 
-  Log(bool kDebugMode){
-    _kDebugMode = kDebugMode;
+  set kDebugMode(value) {
+    _kDebugMode = value;
   }
+
+  // Singleton Class Object
+  static final Log _singleton = Log._internal();
+
+  factory Log() {
+    return _singleton;
+  }
+
+  Log._internal();
 
   void e(String tag, Object? message) {
     if (_kDebugMode) {

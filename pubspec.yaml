@@ -1,6 +1,6 @@
 name: library_store
 description: A Flutter Project Common Library Package.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/Yamanaswal/library_store_flutter.git
 
 environment:
